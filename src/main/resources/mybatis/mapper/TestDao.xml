@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+
+<mapper namespace="com.example.demo.dao.TestDao">
+    <select id="getdata" resultType="com.example.demo.domain.Item"><![CDATA[
+        select id, company_name, item_code, item, item_no,
+               pn, item_group, item_size, unit, pur_unit,
+               pur_cnt, dist_unit, dist_cnt, yield_unit, yield_cnt from ITEM
+    ]]></select>
+</mapper>

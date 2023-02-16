@@ -1,0 +1,18 @@
+mybatis:
+  configuration:
+    multiple-result-sets-enabled: false
+    map-underscore-to-camel-case: true
+    call-setters-on-nulls: true
+    jdbc-type-for-null: varchar
+    default-fetch-size: 500
+  mapper-locations:
+    - classpath:mybatis/mapper/*.xml
+
+spring:
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url : jdbc:oracle:thin:@localhost:1521:xe
+    username: c##QWER
+    password: qwer
+
+
